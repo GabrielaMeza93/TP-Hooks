@@ -3,9 +3,6 @@ import React from 'react';
 
 import { UseFetch } from "../hooks/UseFetch";
 function SearchMovies(){
-	let hola
-
-	let hola2
 	 const [moviesxd, setState] = useState({
 		
 		movie:[]
@@ -54,10 +51,10 @@ if(!localStorage.getItem('buscador')){
 	  
 
 
-function holaxd(){
+function pelicula(){
 	
 	let resul = buscador.current.value
-	  let hola = (localStorage.setItem('buscador',resul))
+	  let peliculas = (localStorage.setItem('buscador',resul))
 	   
 	 
 
@@ -85,7 +82,7 @@ function holaxd(){
 								
 
 								</div>
-								<button onClick={holaxd}     className="btn btn-info">Search</button>
+								<button onClick={pelicula}     className="btn btn-info">Search</button>
 							</form>
 						</div>
 					</div>
